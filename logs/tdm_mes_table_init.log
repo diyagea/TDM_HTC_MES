@@ -1,0 +1,138 @@
+2017-07-14 at 14:37:18 CST INFO  DBUtil.JdbcHelper 524 main - 连接数据库成功
+2017-07-27 at 10:41:21 CST INFO  DBUtil.JdbcHelper 524 main - 连接数据库成功
+2017-07-27 at 14:17:12 CST INFO  DBUtil.JdbcHelper 524 main - 连接数据库成功
+2017-07-27 at 16:07:13 CST INFO  DBUtil.JdbcHelper 524 main - 连接数据库成功
+2017-07-27 at 16:12:39 CST INFO  DBUtil.JdbcHelper 524 main - 连接数据库成功
+2017-07-27 at 16:38:40 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:40:37 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:40:50 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:40:54 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:41:02 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:41:07 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:51:50 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-27 at 16:51:56 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-28 at 09:33:14 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-07-28 at 09:33:24 CST INFO  DBUtil.JdbcHelper 525 main - 连接数据库成功
+2017-08-10 at 13:50:00 CST INFO  service.TDM_mes_list 40 main - Start TDM_mes_list process
+2017-08-10 at 13:50:01 CST ERROR service.TDM_mes_list 34 exec - com.microsoft.sqlserver.jdbc.SQLServerException: 用户 'TMS' 登录失败。 ClientConnectionId:84cb3e27-0378-40b5-9fa9-d26ed7885745 java.sql.SQLException: com.microsoft.sqlserver.jdbc.SQLServerException: 用户 'TMS' 登录失败。 ClientConnectionId:84cb3e27-0378-40b5-9fa9-d26ed7885745
+	at DBUtil.JdbcHelper.query(JdbcHelper.java:49) ~[bin/:?]
+	at service.TDM_mes_list.exec(TDM_mes_list.java:24) [bin/:?]
+	at service.TDM_mes_list.main(TDM_mes_list.java:41) [bin/:?]
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: 用户 'TMS' 登录失败。 ClientConnectionId:84cb3e27-0378-40b5-9fa9-d26ed7885745
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:217) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:279) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:99) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:4346) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:3160) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$100(SQLServerConnection.java:43) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:3123) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7505) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2445) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1981) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1628) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1459) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:773) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1168) ~[sqljdbc41.jar:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_131]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_131]
+	at DBUtil.JdbcUtil.getConnection(JdbcUtil.java:58) ~[bin/:?]
+	at DBUtil.JdbcHelper.getPreparedStatement(JdbcHelper.java:465) ~[bin/:?]
+	at DBUtil.JdbcHelper.query(JdbcHelper.java:44) ~[bin/:?]
+	... 2 more
+
+2017-08-10 at 13:50:01 CST INFO  service.TDM_mes_list 47 main - Execte End But Error
+2017-08-10 at 13:50:36 CST INFO  service.TDM_mes_list 40 main - Start TDM_mes_list process
+2017-08-10 at 13:50:38 CST ERROR service.TDM_mes_list 34 exec - null java.lang.NullPointerException
+	at service.TDM_mes_list.exec(TDM_mes_list.java:30) [bin/:?]
+	at service.TDM_mes_list.main(TDM_mes_list.java:41) [bin/:?]
+
+2017-08-10 at 13:50:38 CST INFO  service.TDM_mes_list 47 main - Execte End But Error
+2017-08-10 at 13:53:30 CST INFO  service.TDM_mes_list 45 main - Start TDM_mes_list process
+2017-08-10 at 13:53:32 CST INFO  service.TDM_mes_list 48 main - Execte End Successful
+2017-08-10 at 14:01:57 CST INFO  service.TDM_mes_list 47 main - Start TDM_mes_list process
+2017-08-10 at 14:01:59 CST INFO  service.TDM_mes_list 50 main - Execte End Successful
+2017-09-15 at 19:16:47 CST INFO  service.MainProcess 9 main - Start Run Main Process
+2017-09-15 at 19:16:47 CST INFO  service.TDM_mes_item 71 main - Start TDM_mes_item process
+2017-09-15 at 19:19:24 CST INFO  service.TDM_mes_item 74 main - Execte End Successful
+2017-09-15 at 19:19:24 CST INFO  service.TDM_mes_tool 61 main - Start TDM_mes_tool process
+2017-09-15 at 19:19:31 CST ERROR service.TDM_mes_tool 54 exec - null java.lang.NullPointerException
+	at service.TDM_mes_tool.exec(TDM_mes_tool.java:46) [bin/:?]
+	at service.TDM_mes_tool.main(TDM_mes_tool.java:62) [bin/:?]
+	at service.MainProcess.main(MainProcess.java:11) [bin/:?]
+
+2017-09-15 at 19:19:31 CST INFO  service.TDM_mes_tool 68 main - Execte End But Error
+2017-09-15 at 19:19:31 CST INFO  service.TDM_mes_item_tool 42 main - Start TDM_mes_item_tool process
+2017-09-15 at 19:19:46 CST INFO  service.TDM_mes_item_tool 45 main - Execte End Successful
+2017-09-15 at 19:19:46 CST INFO  service.TDM_mes_technology 35 main - Start TDM_mes_technology process
+2017-09-15 at 19:20:01 CST INFO  service.TDM_mes_technology 38 main - Execte End Successful
+2017-09-15 at 19:20:01 CST INFO  service.TDM_mes_list 55 main - Start TDM_mes_list process
+2017-09-15 at 19:20:03 CST INFO  service.TDM_mes_list 58 main - Execte End Successful
+2017-09-15 at 19:20:03 CST INFO  service.TDM_mes_tool_list 39 main - Start TDM_mes_tool_list process
+2017-09-15 at 19:20:05 CST INFO  service.TDM_mes_tool_list 42 main - Execte End Successful
+2017-09-15 at 19:20:05 CST INFO  service.MainProcess 16 main - End Run Main Process
+2017-09-15 at 20:12:39 CST INFO  service.MainProcess 9 main - Start Run Main Process
+2017-09-15 at 20:12:39 CST INFO  service.TDM_mes_item 71 main - Start TDM_mes_item process
+2017-09-15 at 20:15:05 CST INFO  service.TDM_mes_item 74 main - Execte End Successful
+2017-09-15 at 20:15:05 CST INFO  service.TDM_mes_tool 61 main - Start TDM_mes_tool process
+2017-09-15 at 20:15:25 CST INFO  service.TDM_mes_tool 64 main - Execte End Successful
+2017-09-15 at 20:15:25 CST INFO  service.TDM_mes_item_tool 42 main - Start TDM_mes_item_tool process
+2017-09-15 at 20:15:41 CST INFO  service.TDM_mes_item_tool 45 main - Execte End Successful
+2017-09-15 at 20:15:41 CST INFO  service.TDM_mes_technology 35 main - Start TDM_mes_technology process
+2017-09-15 at 20:15:53 CST INFO  service.TDM_mes_technology 38 main - Execte End Successful
+2017-09-15 at 20:15:53 CST INFO  service.TDM_mes_list 55 main - Start TDM_mes_list process
+2017-09-15 at 20:15:55 CST INFO  service.TDM_mes_list 58 main - Execte End Successful
+2017-09-15 at 20:15:55 CST INFO  service.TDM_mes_tool_list 39 main - Start TDM_mes_tool_list process
+2017-09-15 at 20:15:57 CST INFO  service.TDM_mes_tool_list 42 main - Execte End Successful
+2017-09-15 at 20:15:57 CST INFO  service.MainProcess 16 main - End Run Main Process
+2017-09-20 at 09:41:30 CST INFO  service.TDM_mes_tool 61 main - Start TDM_mes_tool process
+2017-09-20 at 09:41:46 CST INFO  service.TDM_mes_tool 64 main - Execte End Successful
+2017-09-20 at 09:42:31 CST INFO  service.TDM_mes_tool 61 main - Start TDM_mes_tool process
+2017-09-20 at 09:42:46 CST INFO  service.TDM_mes_tool 64 main - Execte End Successful
+2017-09-20 at 09:43:33 CST INFO  service.TDM_mes_item 71 main - Start TDM_mes_item process
+2017-09-20 at 09:49:19 CST INFO  service.TDM_mes_item 73 main - Start TDM_mes_item process
+2017-09-20 at 09:49:41 CST ERROR service.TDM_mes_item 66 exec - com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Software caused connection abort: recv failed ClientConnectionId:8930cf2e-a5f8-4a4f-b629-7bbc8d13059d”。 java.sql.SQLException: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Software caused connection abort: recv failed ClientConnectionId:8930cf2e-a5f8-4a4f-b629-7bbc8d13059d”。
+	at DBUtil.JdbcHelper.getSingle(JdbcHelper.java:136) ~[bin/:?]
+	at service.TDM_mes_item.exec(TDM_mes_item.java:38) [bin/:?]
+	at service.TDM_mes_item.main(TDM_mes_item.java:74) [bin/:?]
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Software caused connection abort: recv failed ClientConnectionId:8930cf2e-a5f8-4a4f-b629-7bbc8d13059d”。
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2397) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1762) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1977) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1628) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1459) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:773) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1168) ~[sqljdbc41.jar:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_131]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_131]
+	at DBUtil.JdbcUtil.getConnection(JdbcUtil.java:58) ~[bin/:?]
+	at DBUtil.JdbcHelper.getPreparedStatement(JdbcHelper.java:465) ~[bin/:?]
+	at DBUtil.JdbcHelper.getSingle(JdbcHelper.java:125) ~[bin/:?]
+	... 2 more
+Caused by: java.io.IOException: Software caused connection abort: recv failed ClientConnectionId:8930cf2e-a5f8-4a4f-b629-7bbc8d13059d
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.ensureSSLPayload(IOBuffer.java:711) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.readInternal(IOBuffer.java:768) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.read(IOBuffer.java:760) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:955) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:943) ~[sqljdbc41.jar:?]
+	at sun.security.ssl.InputRecord.readFully(Unknown Source) ~[?:1.8.0_131]
+	at sun.security.ssl.InputRecord.read(Unknown Source) ~[?:1.8.0_131]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_131]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_131]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_131]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_131]
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1688) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1977) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1628) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1459) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:773) ~[sqljdbc41.jar:?]
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1168) ~[sqljdbc41.jar:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_131]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[?:1.8.0_131]
+	at DBUtil.JdbcUtil.getConnection(JdbcUtil.java:58) ~[bin/:?]
+	at DBUtil.JdbcHelper.getPreparedStatement(JdbcHelper.java:465) ~[bin/:?]
+	at DBUtil.JdbcHelper.getSingle(JdbcHelper.java:125) ~[bin/:?]
+	... 2 more
+
+2017-09-20 at 09:49:41 CST INFO  service.TDM_mes_item 80 main - Execte End But Error
+2017-09-20 at 10:03:43 CST INFO  service.TDM_mes_item 73 main - Start TDM_mes_item process
+2017-09-20 at 10:05:14 CST INFO  service.TDM_mes_item 76 main - Execte End Successful
